@@ -1,17 +1,10 @@
-const five = require("johnny-five");
-const raspi = require("raspi").RaspiIO;
-
+var five = require("johnny-five");
+var Raspi = require("raspi-io").RaspiIO;
 var board = new five.Board({
-  io: new raspi()
+  io: new Raspi()
 });
 
-board.on("ready", () => {
-    var led = new five.led("p1-13")
-    led.bink()
+board.on("ready", function() {
+  var led = new five.Led("P1-13");
+  led.blink();
 });
-
-
-// board.on("ready", function() {
-//     var led = new five.Led("P1-13");
-//     led.blink();
-//   });
