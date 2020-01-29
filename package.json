@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ledflash.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "johnny-five": "^1.4.0",
     "raspi": "^6.0.1",
     "raspi-gpio": "^6.2.2",
+    "raspi-io": "^11.0.0",
     "raspi-led": "^2.1.2",
     "raspi-pwm": "^6.0.0",
     "raspi-soft-pwm": "^6.0.2"
